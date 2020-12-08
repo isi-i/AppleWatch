@@ -1,4 +1,6 @@
 <?php
+  require('slackToken.php');
+
   $memo = $_POST['memo'];
   $name = $_POST['name'];
   $action = $_POST['action'];
