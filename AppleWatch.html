@@ -8,23 +8,34 @@
 </head>
 
 <body>
-    <p>
-        <select name="name" size="3">
-	            <option value="tarou">たろう</option>
-	            <option value="hanako">はなこ</option>
-	            <option value="jirou">じろう</option>
-	        </select>
-    </p>
-    <p>
-        <select name="things" size="3">
-	            <option value="osikko">おしっこ</option>
-	            <option value="unti">うんち</option>
-	            <option value="outo">嘔吐</option>
-	        </select>
-    </p>
-    <button type="button" name="submit">
-	        送信
-	    </button>
+    <form method="POST" action="sendSlack.php">
+        <p>名前</p>
+            <input type="radio" name="name" value="いのうえ　まおと" />いのうえまおと<br />
+            <input type="radio" name="name" value="はやし　かほ" />はやしかほ<br />
+            <input type="radio" name="name" value="あながさ　れいな" />あながされいな<br />
+            <input type="radio" name="name" value="せなは　ふうわ" />せなはふうわ<br />
+            <input type="radio" name="name" value="かわい　こうき" />かわいこうき<br />
+            <input type="radio" name="name" value="こむらさき　ちはや" />こむらさきちはや<br />
+            <input type="radio" name="name" value="いしざき　あさひ" />いしざきあさひ<br />
+            <input type="radio" name="name" value="いしだ　あさひ" />いしだあさひ<br />
+            <input type="radio" name="name" value="かたやま　きう" />かたやまきう<br />
+            <input type="radio" name="name" value="まつしま　しずや" />まつしましずや<br />
+            <input type="radio" name="name" value="ねもと　にこ" />ねもとにこ<br />
+            <input type="radio" name="name" value="みつやま　りつ" />みつやまりつ<br />
+            <input type="radio" name="name" value="やまだ　はやと" />やまだはやと<br />
+            <input type="radio" name="name" value="よしつぐ　はるゆき" />よしつぐはるゆき<br />
+            <input type="radio" name="name" value="ねもと　ふうか" />ねもと ふうか<br />
+        <p>事柄</p>
+            <input type="radio" name="action" value="おしっこ" />おしっこ<br />
+            <input type="radio" name="action" value="うんち" />うんち<br />
+            <input type="radio" name="action" value="給食" />給食<br />
+            <input type="radio" name="action" value="午睡" />午睡<br />
+            <input type="radio" name="action" value="おやつ" />おやつ<br />
+        <p>メモ</p>
+            <input type="text" name="memo" />
+
+        <input type="submit" value="送信">
+    </form>
 </body>
 
 </html>
