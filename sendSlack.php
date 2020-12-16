@@ -18,4 +18,4 @@
 ?>
 <p>送信しました。</p>
 
-<a href="http://oguzemi.sakura.ne.jp/renTest/AppleWatch.html">戻る</a>
+<a href="AppleWatch.html">戻る</a>
