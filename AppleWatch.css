@@ -2,3 +2,7 @@ select,
 option {
     width: 100px;
 }
+
+button {
+    width: 70px;
+}
